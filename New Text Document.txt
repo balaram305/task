@@ -1,0 +1,89 @@
+PS C:\Users\lenovo\Desktop\New folder> git init
+Reinitialized existing Git repository in C:/Users/lenovo/Desktop/New folder/.git/
+PS C:\Users\lenovo\Desktop\New folder> git config user.name "balaram305"
+PS C:\Users\lenovo\Desktop\New folder> git config.email "balaramdas@giet.edu"
+git: 'config.email' is not a git command. See 'git --help'.
+PS C:\Users\lenovo\Desktop\New folder> git config user.email "balaramdas@giet.edu"
+PS C:\Users\lenovo\Desktop\New folder> git add .
+PS C:\Users\lenovo\Desktop\New folder> git commit -m "two files added"
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\lenovo\Desktop\New folder> git remote add origin "https://github.com/balaram305/task.git"                       
+error: remote origin already exists.
+PS C:\Users\lenovo\Desktop\New folder> git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 217 bytes | 108.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balaram305/task.git
+ * [new branch]      master -> master
+PS C:\Users\lenovo\Desktop\New folder> git add .
+PS C:\Users\lenovo\Desktop\New folder> git commit  -m "file1 modified"
+[master 8fa4d87] file1 modified
+ 1 file changed, 1 insertion(+)
+PS C:\Users\lenovo\Desktop\New folder> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balaram305/task.git
+   73d64e3..8fa4d87  master -> master
+PS C:\Users\lenovo\Desktop\New folder> git branch features 
+PS C:\Users\lenovo\Desktop\New folder> git checkout features
+Switched to branch 'features'
+PS C:\Users\lenovo\Desktop\New folder> git add .
+PS C:\Users\lenovo\Desktop\New folder> git commit -m "file2 modified"
+[features 5c2d56f] file2 modified
+ 1 file changed, 1 insertion(+)
+PS C:\Users\lenovo\Desktop\New folder> git push origin master
+Everything up-to-date
+PS C:\Users\lenovo\Desktop\New folder> git push origin features
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'features' on GitHub by visiting:
+remote:      https://github.com/balaram305/task/pull/new/features
+remote:
+To https://github.com/balaram305/task.git
+ * [new branch]      features -> features
+PS C:\Users\lenovo\Desktop\New folder> git checkout branch
+error: pathspec 'branch' did not match any file(s) known to git
+Merge branch 'features'
+PS C:\Users\lenovo\Desktop\New folder> git checkout master
+Switched to branch 'master'
+PS C:\Users\lenovo\Desktop\New folder> git add .
+PS C:\Users\lenovo\Desktop\New folder> git commit -m"file1 modified"
+[master 50f16c7] file1 modified
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\lenovo\Desktop\New folder> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balaram305/task.git
+   8fa4d87..50f16c7  master -> master
+PS C:\Users\lenovo\Desktop\New folder> git merge features
+Merge made by the 'ort' strategy.
+ file2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+PS C:\Users\lenovo\Desktop\New folder> git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 294 bytes | 294.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/balaram305/task.git
+   50f16c7..25eebb2  master -> master
+PS C:\Users\lenovo\Desktop\New folder> 
